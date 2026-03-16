@@ -303,17 +303,24 @@
     background:rgba(8,11,20,0.55);
     backdrop-filter:blur(4px);
   }
+<style>
+@media (max-width:480px) {
+  .msg { max-width:90%; }
+  .msg-body { font-size:0.95rem; }
+}
 
-  @media (max-width:480px) {
-    .msg { max-width:90%; }
-    .msg-body { font-size:0.95rem; }
-  }
+@keyframes fadeUp {
+  from { opacity:0; transform:translateY(16px); }
+  to { opacity:1; transform:translateY(0); }
+}
 
-  @keyframes fadeUp {
-
-    from { opacity:0; transform:translateY(16px); }
-    to   { opacity:1; transform:translateY(0); }
-  }
+/* Google翻訳ウィジェットがスマホで消える問題の修正 */
+#google_translate_element,
+.goog-te-gadget {
+  overflow-x: auto !important;
+  white-space: nowrap !important;
+  display: block !important;
+}
 </style>
 </head>
 <body>
