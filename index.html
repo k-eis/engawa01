@@ -303,6 +303,12 @@
     background:rgba(8,11,20,0.55);
     backdrop-filter:blur(4px);
   }
+  footer a { text-decoration:none; }
+  .footer-vols { display:flex; flex-wrap:wrap; gap:10px; justify-content:center; margin-bottom:12px; }
+  .footer-vols a { display:inline-block; padding:7px 16px; border:1px solid rgba(200,185,155,0.45); border-radius:20px; color:rgba(220,205,170,0.9); font-size:0.7rem; letter-spacing:0.18em; font-weight:300; }
+  .footer-vols a:hover { border-color:rgba(200,185,155,0.8); color:rgba(240,225,185,1); }
+  .footer-note a { display:inline-block; padding:9px 28px; border:1px solid rgba(100,210,220,0.5); border-radius:20px; color:rgba(100,210,220,0.92); font-size:0.72rem; letter-spacing:0.2em; font-weight:300; }
+  .footer-note a:hover { border-color:rgba(100,210,220,0.85); color:rgba(140,230,240,1); }
 <style>
 @media (max-width:480px) {
   .msg { max-width:90%; }
@@ -1550,9 +1556,12 @@ function googleTranslateElementInit() {
 <footer>
   エンガワ &nbsp;·&nbsp; vol.01<br>
   k-eis &nbsp;×&nbsp; Claude &nbsp;×&nbsp; ChatGPT &nbsp;×&nbsp; Copilot &nbsp;×&nbsp; Gemini<br><br>
-  <a href="https://note.com/keen_prawn2520/n/ndde37fe259ec" target="_blank" style="color:rgba(210,185,140,0.7); text-decoration:none; font-size:0.78rem; letter-spacing:0.15em;">📝 noteでも読む</a>
-  &nbsp;&nbsp;·&nbsp;&nbsp;
-  <a href="https://k-eis.github.io/engawa02/" style="color:rgba(100,210,220,0.7); text-decoration:none; font-size:0.78rem; letter-spacing:0.15em;">vol.02 へ →</a>
+  <div class="footer-vols">
+    <a href="https://k-eis.github.io/engawa02/">→ vol.02</a>
+  </div>
+  <div class="footer-note">
+    <a href="https://note.com/keen_prawn2520/n/ndde37fe259ec" target="_blank">📝 noteでも読む</a>
+  </div>
 </footer>
 
 <script>
